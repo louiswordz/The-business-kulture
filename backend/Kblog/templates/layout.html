@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home {% endblock%}</title>
+</head>
+<body>
+   <div>
+    <header>
+        <div>
+            <h1>TBK</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Blog</li>
+            </ul>
+        </nav>
+        <div>
+            <h1>User</h1>
+        </div>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+   </div> 
+</body>
+</html>
